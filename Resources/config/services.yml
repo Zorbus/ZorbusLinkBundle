@@ -1,0 +1,47 @@
+parameters:
+    zorbus_link.link.admin.class: Zorbus\LinkBundle\Admin\LinkAdmin
+    zorbus_link.category.admin.class: Zorbus\LinkBundle\Admin\CategoryAdmin
+
+    zorbus_link.link.entity.class: Zorbus\LinkBundle\Entity\Link
+    zorbus_link.category.entity.class: Zorbus\LinkBundle\Entity\Category
+
+    zorbus_link.link.controller.class: SonataAdminBundle:CRUD
+    zorbus_link.category.controller.class: SonataAdminBundle:CRUD
+
+    zorbus_block.service.link.class: Zorbus\LinkBundle\Model\BlockLinkConfig
+    zorbus_block.service.category.class: Zorbus\LinkBundle\Model\BlockCategoryConfig
+    zorbus_block.service.categories.class: Zorbus\LinkBundle\Model\BlockCategoriesConfig
+
+services:
+    zorbus_link.link.admin:
+        class: %zorbus_link.link.admin.class%
+        arguments: [~, %zorbus_link.link.entity.class%, %zorbus_link.link.controller.class%]
+        calls:
+            - [setTranslationDomain, [LinkBundle]]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Links, label: Links }
+    zorbus_link.category.admin:
+        class: %zorbus_link.category.admin.class%
+        arguments: [~, %zorbus_link.category.entity.class%, %zorbus_link.category.controller.class%]
+        calls:
+            - [setTranslationDomain, [LinkBundle]]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: Links, label: Categories }
+    zorbus_link.block.link:
+        class: %zorbus_block.service.link.class%
+        scope: prototype
+        arguments: ['@zorbus_block.block.admin', '@form.factory', '@http_kernel']
+        tags:
+            - { name: zorbus_block.block, category: Links }
+    zorbus_link.block.category:
+        class: %zorbus_block.service.category.class%
+        scope: prototype
+        arguments: ['@zorbus_block.block.admin', '@form.factory', '@http_kernel']
+        tags:
+            - { name: zorbus_block.block, category: Links }
+    zorbus_link.block.categories:
+        class: %zorbus_block.service.categories.class%
+        scope: prototype
+        arguments: ['@zorbus_block.block.admin', '@form.factory', '@http_kernel']
+        tags:
+            - { name: zorbus_block.block, category: Links }

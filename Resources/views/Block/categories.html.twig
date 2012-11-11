@@ -1,0 +1,22 @@
+<div class="row-fluid">
+    <div class="accordion" id="accordion2">
+        {% for category in categories %}
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse{{ category.id }}">
+                    {{ category }}
+                </a>
+            </div>
+            <div id="collapse{{ category.id }}" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    <ul>
+                        {% for link in category.links %}
+                        <li><a href="{{ link.url }}" target="{{ link.target }}">{{ link.title | raw }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

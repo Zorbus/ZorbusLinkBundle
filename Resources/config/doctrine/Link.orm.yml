@@ -1,0 +1,82 @@
+Zorbus\LinkBundle\Entity\Link:
+    type: entity
+    table: zorbus_link_link
+    repositoryClass: Zorbus\LinkBundle\Entity\LinkRepository
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        title:
+            type: string
+            length: 255
+            nullable: false
+        url:
+            type: string
+            length: 255
+            nullable: false
+        description:
+            type: text
+            nullable: true
+        lang:
+            type: string
+            length: 5
+            nullable: true
+            default: en_US
+        image:
+            type: string
+            length: 255
+            nullable: true
+        target:
+            type: string
+            length: 255
+            nullable: true
+            default: _self
+        position:
+            type: integer
+            default: 1
+            nullable: true
+            gedmo:
+                - sortablePosition
+        enabled:
+            type: boolean
+            default: true
+            nullable: true
+        slug:
+            type: string
+            length: 255
+            nullable: true
+            gedmo:
+                slug:
+                    separator: '-'
+                    style: default
+                    fields:
+                        - title
+        created_at:
+            type: datetime
+            nullable: true
+            gedmo:
+                timestampable:
+                    on: create
+        updated_at:
+            type: datetime
+            nullable: true
+            gedmo:
+                timestampable:
+                    on: update
+    lifecycleCallbacks:
+        prePersist: [preImageUpload]
+        preUpdate: [preImageUpload]
+        postPersist: [postImageUpload]
+        postUpdate: [postImageUpload]
+        postRemove: [postRemove]
+    manyToOne:
+        category:
+            targetEntity: Category
+            inversedBy: links
+            joinColumn:
+                name: category_id
+                referencedColumnName: id
+                onDelete: CASCADE
+            gedmo:
+                - sortableGroup
