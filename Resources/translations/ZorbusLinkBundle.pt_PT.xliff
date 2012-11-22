@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="">
+        <body>
+            <trans-unit id="1">
+                <source>Links</source>
+                <target>Ligações</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Categories</source>
+                <target>Categorias</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Title</source>
+                <target>Título</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>Url</source>
+                <target>URL</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>Enabled</source>
+                <target>Ativo</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>Category</source>
+                <target>Categoria</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>Link List</source>
+                <target>Listar ligações</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>Identification</source>
+                <target>Identificação</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>Target</source>
+                <target>Destino</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Self</source>
+                <target>Própria página</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>Blank</source>
+                <target>Nova página</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Configuration</source>
+                <target>Configurações</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>Description</source>
+                <target>Descrição</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>Image</source>
+                <target>Imagem</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>Position</source>
+                <target>Posição</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>Link Show</source>
+                <target>Mostrar ligação</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>Link History</source>
+                <target>Histórico da ligação</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>Category List</source>
+                <target>Listar categorias</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>Name</source>
+                <target>Nome</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>Category History</source>
+                <target>Histórico da categoria</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>Category Show</source>
+                <target>Mostrar categoria</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source></source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="">
+                <source></source>
+                <target></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

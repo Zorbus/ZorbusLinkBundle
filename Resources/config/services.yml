@@ -17,14 +17,14 @@ services:
         class: %zorbus_link.link.admin.class%
         arguments: [~, %zorbus_link.link.entity.class%, %zorbus_link.link.controller.class%]
         calls:
-            - [setTranslationDomain, [LinkBundle]]
+            - [setTranslationDomain, [ZorbusLinkBundle]]
         tags:
             - { name: sonata.admin, manager_type: orm, group: Links, label: Links }
     zorbus_link.category.admin:
         class: %zorbus_link.category.admin.class%
         arguments: [~, %zorbus_link.category.entity.class%, %zorbus_link.category.controller.class%]
         calls:
-            - [setTranslationDomain, [LinkBundle]]
+            - [setTranslationDomain, [ZorbusLinkBundle]]
         tags:
             - { name: sonata.admin, manager_type: orm, group: Links, label: Categories }
     zorbus_link.block.link:
