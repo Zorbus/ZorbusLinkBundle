@@ -32,16 +32,16 @@ services:
         scope: prototype
         arguments: ['@zorbus_block.block.admin', '@form.factory', '@http_kernel']
         tags:
-            - { name: zorbus_block.block, category: Links }
+            - { name: zorbus_block.block, category: Link }
     zorbus_link.block.category:
         class: %zorbus_block.service.category.class%
         scope: prototype
         arguments: ['@zorbus_block.block.admin', '@form.factory', '@http_kernel']
         tags:
-            - { name: zorbus_block.block, category: Links }
+            - { name: zorbus_block.block, category: Link }
     zorbus_link.block.categories:
         class: %zorbus_block.service.categories.class%
         scope: prototype
         arguments: ['@zorbus_block.block.admin', '@form.factory', '@http_kernel']
         tags:
-            - { name: zorbus_block.block, category: Links }
+            - { name: zorbus_block.block, category: Link }
